@@ -1,0 +1,57 @@
+{
+  "name": "@basd/registry",
+  "version": "0.0.0",
+  "description": "A simple yet powerful utility to manage and create class instances in JS applications.",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/frenware/utils/registry.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/frenware/utils/registry/issues"
+  },
+  "homepage": "https://gitlab.com/frenware/utils/registry#readme",
+  "main": "lib/registry.js",
+  "browser": {
+    ".": "./lib/registry.js"
+  },
+  "scripts": {
+    "dev:test": "nodemon -w ../.. -x npm test",
+    "dev": "nodemon -w ../.. test/registry.test.js",
+    "update": "npm run update:prod && npm run update:dev",
+    "update:prod": "npm i -S basd@latest",
+    "update:dev": "npm i -D @basd/testr@latest",
+    "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "test": "testr test"
+  },
+  "dependencies": {
+    "@basd/base": "^0.0.1",
+    "basd": "^1.0.9"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.1.2",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  },
+  "keywords": [
+    "registry",
+    "class-management",
+    "javascript",
+    "OOP",
+    "object-oriented",
+    "instance-creation",
+    "class-validation",
+    "dependency-injection",
+    "design-patterns",
+    "SOLID",
+    "class-registry",
+    "class-storage",
+    "singleton",
+    "dynamic-class",
+    "runtime",
+    "base-class",
+    "ingest",
+    "override"
+  ]
+}
