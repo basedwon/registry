@@ -1,6 +1,6 @@
 {
   "name": "@basd/registry",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple yet powerful utility to manage and create class instances in JS applications.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
