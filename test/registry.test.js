@@ -18,13 +18,13 @@ describe('Registry', () => {
   describe('createInstance', () => {
     it('should create an instance of a class', () => {
       registry.set('Dummy', Dummy)
-      const instance = registry.createInstance('Dummy', Dummy)
+      const instance = registry.createInstance('Dummy', [], Dummy)
       expect(instance).to.be.instanceof(Dummy)
       expect(instance instanceof Dummy).to.be.true
     })
 
     it('should throw an error for invalid class', () => {
-      expect(() => registry.createInstance('Invalid', Dummy)).to.throw(Error)
+      expect(() => registry.createInstance('Invalid', [], Dummy)).to.throw(Error)
     })
   })
 
