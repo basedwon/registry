@@ -11,7 +11,7 @@ declare module '@basd/registry' {
 
     classes: Record<string, AnyFunction>;
 
-    createInstance(name: string, baseClass: AnyFunction, ...args: any[]): any;
+    createInstance(name: string, args: any[], baseClass: AnyFunction): any;
     isValidClass(targetClass: AnyFunction | null, baseClass: AnyFunction | null): boolean;
     isValidInstance(instance: any, baseClass: AnyFunction | null): boolean;
     ingest(source: { constructor: { classes: AnyObject }, opts: { classes: AnyObject } }): void;

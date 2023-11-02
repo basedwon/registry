@@ -8,7 +8,7 @@ Registry class for managing different classes.
 * [Registry](#Registry)
     * [new Registry(config)](#new_Registry_new)
     * _instance_
-        * [.createInstance(name, baseClass, ...args)](#Registry+createInstance) ⇒ <code>Object</code>
+        * [.createInstance(name, args, baseClass)](#Registry+createInstance) ⇒ <code>Object</code>
         * [.isValidClass(targetClass, baseClass)](#Registry+isValidClass) ⇒ <code>boolean</code>
         * [.isValidInstance(instance, baseClass)](#Registry+isValidInstance) ⇒ <code>boolean</code>
         * [.ingest(source)](#Registry+ingest)
@@ -33,7 +33,7 @@ Create a new Registry instance.
 
 <a name="Registry+createInstance"></a>
 
-### registry.createInstance(name, baseClass, ...args) ⇒ <code>Object</code>
+### registry.createInstance(name, args, baseClass) ⇒ <code>Object</code>
 Create an instance of a class.
 
 **Kind**: instance method of [<code>Registry</code>](#Registry)  
@@ -42,8 +42,8 @@ Create an instance of a class.
 | Param | Type | Description |
 | --- | --- | --- |
 | name | <code>string</code> | The name of the class to instantiate. |
+| args | <code>Array</code> | The arguments to pass to the class constructor. |
 | baseClass | <code>function</code> | The base class for validation. |
-| ...args | <code>\*</code> | The arguments to pass to the class constructor. |
 
 <a name="Registry+isValidClass"></a>
 

@@ -77,12 +77,12 @@ const registry = new Registry({
 })
 ```
 
-### `createInstance(name, baseClass, ...args)`
+### `createInstance(name, args, baseClass)`
 
 Create an instance of a class with a given `name`. Optionally, specify a `baseClass` to validate against.
 
 ```js
-const instance = registry.createInstance('MyClass', MyBaseClass, arg1, arg2)
+const instance = registry.createInstance('MyClass', [arg1, arg2], MyBaseClass)
 ```
 
 ### `isValidClass(targetClass, baseClass)`
