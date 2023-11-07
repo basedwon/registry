@@ -26,7 +26,7 @@
     "test": "testr test"
   },
   "dependencies": {
-    "basd": "^1.0.16"
+    "@basd/base": "^0.0.7"
   },
   "devDependencies": {
     "@basd/testr": "^0.1.2",
