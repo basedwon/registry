@@ -20,7 +20,7 @@
     "dev:test": "nodemon -w ../.. -x npm test",
     "dev": "nodemon -w ../.. test/registry.test.js",
     "update": "npm run update:prod && npm run update:dev",
-    "update:prod": "npm i -S basd@latest",
+    "update:prod": "npm i -S @basd/base@latest",
     "update:dev": "npm i -D @basd/testr@latest",
     "docs": "jsdoc2md lib/*.js > docs/api.md",
     "test": "testr test"

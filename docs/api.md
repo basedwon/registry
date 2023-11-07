@@ -17,6 +17,9 @@ Registry class for managing different classes.
         * [.setMany(classes, override)](#Registry+setMany)
         * [.get(name, defaultValue)](#Registry+get) ⇒ <code>function</code> \| <code>null</code>
         * [.has(name)](#Registry+has) ⇒ <code>boolean</code>
+        * [.remove(name)](#Registry+remove)
+        * [.removeAll()](#Registry+removeAll)
+        * [.destroy()](#Registry+destroy)
     * _static_
         * [.get(config)](#Registry.get) ⇒ [<code>Registry</code>](#Registry)
 
@@ -146,6 +149,32 @@ Check if a class exists by name.
 | --- | --- | --- |
 | name | <code>string</code> | The name of the class. |
 
+<a name="Registry+remove"></a>
+
+### registry.remove(name)
+Removes a specific class from the registry.
+
+**Kind**: instance method of [<code>Registry</code>](#Registry)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | The name of the class to be removed from the registry. |
+
+<a name="Registry+removeAll"></a>
+
+### registry.removeAll()
+Removes all classes from the registry.
+
+**Kind**: instance method of [<code>Registry</code>](#Registry)  
+<a name="Registry+destroy"></a>
+
+### registry.destroy()
+Destroys the registry by deleting all properties of the classes object.
+This method ensures that all class references in the registry are 
+cleared, potentially allowing them to be garbage collected if there
+are no other references to them.
+
+**Kind**: instance method of [<code>Registry</code>](#Registry)  
 <a name="Registry.get"></a>
 
 ### Registry.get(config) ⇒ [<code>Registry</code>](#Registry)
